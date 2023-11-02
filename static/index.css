@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    animation: glitch 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glitch {
+    0% {
+        transform: skew(0deg);
+        text-shadow: 0 0 5px #fff;
+    }
+    20% {
+        transform: skew(20deg);
+        text-shadow: 0 0 5px #0ff;
+    }
+    40% {
+        transform: skew(-20deg);
+        text-shadow: 0 0 5px #f0f;
+    }
+    60% {
+        transform: skew(10deg);
+        text-shadow: 0 0 5px #ff0;
+    }
+    80% {
+        transform: skew(-10deg);
+        text-shadow: 0 0 5px #0f0;
+    }
+    100% {
+        transform: skew(0deg);
+        text-shadow: 0 0 5px #fff;
+    }
+}
